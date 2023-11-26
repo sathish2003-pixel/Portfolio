@@ -1,1 +1,0 @@
-This is a portfolio created for the personal use
