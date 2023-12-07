@@ -18,28 +18,27 @@
   
 /**nav bar style*/
  
- 
 
-.navbar li a {
+.navbar a {
     
     font-size: 20px;
     cursor: pointer;
-    color:aqua;
-    text-align:center;
-} 
+    color:blue;
+    
+  } 
 
 .navbar li:after {
     display: block;
     content: '';
   
-    border-bottom: solid 2px white;
+    border-bottom: solid 2px black;
     transform: scaleX(0);
     transition: transform 200ms ease-in-out;
 }
 
 .navbar li:hover:after {
     transform: scaleX(0.5);
-    color: bisque;
+    color: black;
 } 
 
 /* navbar button */
@@ -80,39 +79,42 @@
 </style>
 </head>
 <!--nav bar started-->
-<div id="home">
-     <nav class="navbar navbar-expand-lg  bg-dark">
+
+     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">SATHISH</a>
+          <a class="navbar-brand text-dark" href="#">SATHISH</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav nav justify-content-center me-auto mb-2 mb-lg-0">
+          <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> -->
+            <ul class="nav justify-content-startr">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">About</a>
+                <a class="nav-link" href="#">Link</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">Projects</a>
+                <a class="nav-link" href="#">Link</a>
               </li>
-            </ul>   
-           
-        
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+<!--            
             <div class="header-social-links">
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
                 <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-              </div> 
+              </div>  -->
 
-          </div>
+          
         </div>
       </nav>
 <!---nav bar ended-->
 <!--home started-->
+
 
 <div class="heading">
 <div class="container-fluid pt-5">
@@ -130,27 +132,26 @@
        </div>
        </div>
        </div>
-     </div>
+     </div> -->
      <div id="about">
       <div class="container pt-5">
         <div class="row">
           <div class="col-lg-6 col md-8">
             <div class="card" style="width:300px; height: 300px;">
               <div class="card-body">
-                <img src="/Portfolio/images/IMG_20230311_191453_611.jpg" class="card-img mx-auto d-block" alt="..." width="10 0px" height="250px">
+                <img src="./images/1660450365791-removebg-preview.png" class="card-img mx-auto d-block" alt="..." width="100px" height="500px">
               </div>
             </div>
 
             </div>
             <div class="col-lg-6 col md-8">
               <h2>ABOUT</h2>
-              <h2></h2>
+              <h4>Hello there! I'm Ssthish, a passionate and versatile full-stack developer with a keen eye for creating dynamic and user-friendly web applications. My journey into the world of coding began with a fascination for turning ideas into reality through lines of code. Today, I stand as a dedicated professional, committed to delivering innovative solutions that not only meet but exceed expectations.</h4>
 
             </div>
           </div>
         </div>
-      </div>
-     </div>
+       
      
  
   
