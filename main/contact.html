@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function passwordvalidation(){
+            let password=document.getElementById("pass").value;
+            let size=0;
+            let upper=0;
+            let lower=0;
+            let num=0;
+            let special=0;
+            for(let i = 0;i < password.length;i++){
+                size++
+                if((password[i]>='A')&&(password[i]<='Z')){
+                    upper++;
+                }
+                else if((password[i]>='a')&&(password[i]<='z')){
+                    lower++;
+                }
+                if((password[i]>='0')&&(password[i]<='9')){
+                    num++;
+                }
+                else{
+                    special++;
+                }
+            }
+            if((size>=8)&&(size>=16)&&(upper>=1)&&(lower>=1)&&(num>=1)&&(special>=1)){
+                alert("strong")
+            }
+            else{
+                alert("weak")
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="pass">
+    <button onclick="passwordvalidation()">Next</button>
+</body>
+</html>
