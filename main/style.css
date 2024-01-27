@@ -1,22 +1,18 @@
 body{background-color:rgb(245, 245, 245);}
-.navbar{
-    background-color:rgb(209, 203, 203);
-}
+
 .nav-link{
-    color: rgb(0, 0, 0);
     font-size: 20px;
     cursor:pointer;
     letter-spacing: 1.5px;
     padding: auto;
 }
 .icons{
-    color: black;
-    word-spacing: 15px;
+     word-spacing: 15px;
     cursor: pointer;
 }
 a{
     text-decoration: none;
-    color: black;
+   
     cursor: pointer;
 }
 .navbar-brand{
@@ -46,6 +42,11 @@ box-shadow: 6px 6px 12px #eeeeee, -6px -6px 12px #ffffff;
 
 
 }
-h1{
-color: rgb(0, 0, 0);
+
+.dark-mode{
+    background-color: #000000e1;
+    color: white;
+}
+.nav-link{
+    color:whitesmoke;
 }
