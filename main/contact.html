@@ -61,7 +61,7 @@
                 <a class="nav-link" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="./about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link">Projects</a>
@@ -80,30 +80,60 @@
           </div>
         </div>
       </nav>
+      <!-- container starts -->
 <div class="container">
     <div class="row pt-5 mt-5">
         <div class="col-lg-6 col-md-6 col-sm-12">
-            <h3>Let's work together</h3>
-              <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
-              <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>12 South Street,Tirunelveli-Town</p>
-              <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>9025893381</p>
-              <p class="mb-2"><i class="fa fa-envelope me-3"></i>sathehsathish2206@gmail.com</p>
-              <div class="d-flex pt-2">
+            <h3 class="pb-4">Let's work together</h3>
+              <h5 class="mb-2"><i class="fa-solid fa-location-dot"></i>  12 South Street,Tirunelveli-Town</h5>
+              <h5 class="mb-2"><i class="fa-solid fa-phone"></i>  9025893381</h5>
+              <h5 class="mb-2"><i class="fa-solid fa-envelope"></i>  sathehsathish2206@gmail.com</h5>
+              <div class="d-flex pt-2 contacts">
                 <style>
-                  .btn-social{
-                    border-radius: 50%;
-                  }
+.contacts{
+letter-spacing: 10px;
+}                 
+.form-label{
+  font-size: 20px;
+}
+                
                 </style>
-                  <a class="btn btn-outline-dark btn-social" href="https://www.linkedin.com/in/sathish-kumar-balakrishnan-3436611b5/"><i class="fab fa-linkedin-in"></i></a>
-                  <a class="btn btn-outline-dark btn-social" href="https://github.com/sathish2003-pixel"><i class="fab fa-github"></i></a>
-
-                  <a class="btn btn-outline-dark btn-social" href=""><i class="fab fa-twitter"></i></a>
-                  <a class="btn btn-outline-dark btn-social" href=""><i class="fab fa-youtube"></i></a>
+                   <a href="https://github.com/sathish2003-pixel"> <i class="fa-brands fa-github fa-2xl"></i></a>
+                   <a href="https://www.linkedin.com/in/sathish-kumar-balakrishnan-3436611b5/"><i class="fa-brands fa-linkedin fa-xl"></i></a>   
+                   <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2xl"></i></a>  
+         
               </div>
         </div>
+        <!-- contact form starts -->
         
-    </div>
-</div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="mb-3">
+            <div class="row">
+              <div class="col">
+            <label  class="form-label">Your name</label>
+                <input type="text" class="form-control" placeholder="Your name">
+              </div>
+              <div class="col">
+            <label  class="form-label">Your email</label>
+                <input type="email" class="form-control" placeholder="Email">
+             </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">Subject</label>
+            <input type="text" class="form-control" placeholder="Subject">
+        </div>
+          <div class="mb-3">
+            <label  class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button class="btn-dark mt-3">Send</button>
+         </div>
+        </div>
 
+<!-- contact form ends -->
+    </div>
+    <!-- row ends -->
+</div>
+<!-- container ends -->
 </body>
 </html>

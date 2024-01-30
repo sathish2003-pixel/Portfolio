@@ -5,6 +5,22 @@ body{background-color:rgb(245, 245, 245);}
     cursor:pointer;
     letter-spacing: 1.5px;
     padding: auto;
+    color: aliceblue;
+}
+.navbar li:after {
+    display: block;
+    content: '';
+    border:solid 1px white;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+}
+
+.navbar li:hover:after {
+    transform: scaleX(1);
+    color:rgb(51, 255, 0);
+} 
+.nav-link:hover{
+    color: yellow;
 }
 .icons{
      word-spacing: 15px;
