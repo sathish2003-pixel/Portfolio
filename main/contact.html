@@ -85,7 +85,7 @@
       </nav>
       <!-- container starts -->
 <div class="container">
-    <div class="row pt-5 mt-5">
+    <div class="row mt-5">
         <div class="col-lg-6 col-md-6 col-sm-12">
             <h3 class="pb-4">Let's work together</h3>
               <h3 class="mb-2"><i class="fa-solid fa-location-dot"></i>  12 South Street,Tirunelveli-Town</h3>
@@ -109,7 +109,7 @@ letter-spacing: 10px;
         </div>
         <!-- contact form starts -->
         
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
           <div class="mb-3">
             <div class="row">
               <div class="col">
@@ -129,7 +129,8 @@ letter-spacing: 10px;
           <div class="mb-3">
             <label  class="form-label">Message</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            <button class="btn-dark mt-3">Send</button>
+            <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-info mt-2" id="liveAlertBtn">Send</button>
          </div>
         </div>
 
@@ -138,5 +139,35 @@ letter-spacing: 10px;
     <!-- row ends -->
 </div>
 <!-- container ends -->
+
+
+<style>
+  .alert{
+    
+    margin-top:10px;
+  }
+</style>
+<script>
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-warning alert-dismissible fade show" role="alert">`,
+    `   <div>Your response sent`,
+    '     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Your response is submitted', 'success')
+  })
+}
+</script>
 </body>
 </html>
+
