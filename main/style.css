@@ -69,3 +69,6 @@ box-shadow: 6px 6px 12px #eeeeee, -6px -6px 12px #ffffff;
 .navbar-toggler{
     background-color: white;
 }
+.navbar{
+ border-bottom: 2px rgb(0, 0, 0) solid;
+}
