@@ -16,13 +16,28 @@
  
 <style>
      #home{
-    background-image:  url(./images/person-playing-3d-video-games-device.jpg);
+    background-image:linear-gradient(rgba(122, 127, 138, 0.8), rgba(15, 23, 43, .8)),url(./images/person-playing-3d-video-games-device.jpg);
   
     background-repeat: no-repeat;
     background-size:cover;
     padding-bottom:500px;
   } 
-
+  @media screen and (max-width:650px) {
+  #home {
+    background-image:linear-gradient(rgba(122, 127, 138, 0.8), rgba(15, 23, 43, .8)),url(./images/2150898496.jpg);
+    background-size: contain;
+    background-size: 680px 700px;
+    color: aliceblue;
+  }
+}
+@media screen and (max-width:450px) {
+  #home {
+    background-image:linear-gradient(rgba(122, 127, 138, 0.8), rgba(15, 23, 43, .8)),url(./images/2150898496.jpg);
+    background-size: contain;
+    background-size: 560px 800px;
+    color: aliceblue;
+  }
+}
 </style>
 </head>
 
@@ -66,7 +81,7 @@
       <div class="container-fluid">
         <div class="row pt-5 mt-5" style="align-content: center;">
             <div class="col-lg-7 col-md-7 col-sm-12 pt-5 mt-5">
-                <h1 class="name text-center text-info">I am Sathish kumar</h1>
+                <h1 class="name text-center">I am Sathish kumar</h1>
                 <h1 class="role text-center pt-5 ">Full stack developer</h1>
                 <div class="pt-5 text-center justify-content-center">
                   <button class="button">Click me</button>
