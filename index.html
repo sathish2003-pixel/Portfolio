@@ -9,6 +9,7 @@
     <link rel="icon"  href="./images/sk-high-resolution-logo-transparent.png">
     
     <link rel="icon" type="image/png" href="./images/table.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
@@ -38,6 +39,59 @@
     color: aliceblue;
   }
 }
+
+/* project style statrs */
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+
+.card {
+  
+
+  transition: all 0.5s;
+
+  &:hover {
+    transform: translateY(-20px);
+    background-position: center 100%;
+    background-size: 105%;
+    box-shadow: 0px 0px 20px 0px rgba(#777777, 0.6);
+
+    .card__button {
+      transform: translateY(0%);
+      color: #ffffff;
+      font-size: 20px;
+      background-color: #000000;
+
+      transition: all 0.3s;
+    }
+  }
+}
+
+.card__button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  background-color:transparent;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+
+  transform: translateY(100%);
+
+  transition: all 0.5s;
+}
+/* project style ends */
 </style>
 </head>
 
@@ -79,9 +133,14 @@
       </nav>
       <div id="home">
       <div class="container-fluid">
-        <div class="row pt-5 mt-5" style="align-content: center;">
+        <div class="row pt-5 mt-5" style="align-content: center;" data-aos="zoom-in"
+        data-aos-easing="ease-in-sine"
+        data-aos-offset="100"
+        data-aos-duration="500"
+       >
+   
             <div class="col-lg-7 col-md-7 col-sm-12 pt-5 mt-5">
-                <h1 class="name text-center">I am Sathish kumar</h1>
+                <h1 class="name text-center"  >I am Sathish kumar</h1>
                 <h1 class="role text-center pt-5 ">Full stack developer</h1>
                 <div class="pt-5 text-center justify-content-center">
                   <button class="button">Click me</button>
@@ -97,6 +156,405 @@
       </div>
       
 </div>
+<div id="about">
+  <div class="container pt-5">
+    <div class="row mt-5" style="align-content: center;">
+        <div class="col-lg-12 mt-5">
+            <h1 class="name text-center">About</h1>
+        </div>
+    </div>
+    <div class="row mt-5" style="align-content: center;">
+      <div class="col-lg-8 col-md-8 col-sm-12">
+          <p>I am a passionate and skilled Python Full Stack Developer with a strong background in both front-end and back-end development. My goal is to create efficient, scalable, and user-friendly web applications that provide seamless experiences.</p>
+      </div>
+      <style>
+        .sathish{
+          border: 1px solid black;
+          
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 30px;
+        }
+      </style>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <img src="../images/IMG-20240129-WA0216.jpg" width="
+        380px" class="img-fluid sathish">
+      </div>
+  </div>
+  </div>
+
+
+ 
+  
+
+
+    <!-- Service Start -->
+    <style>
+      .card {
+        backdrop-filter: blur(5px) saturate(185%);
+-webkit-backdrop-filter: blur(5px) saturate(185%);
+background-color: rgba(1, 10, 30, 0.586);
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.705);
+cursor: pointer;
+      }
+
+.p-4{
+color: white;
+}
+.back{
+background: linear-gradient(rgba(15, 23, 43, 0.64), rgba(15, 23, 43, 0.749)),(rgba(247, 247, 247, 0.579), rgb(128, 133, 145)) ;
+background-position: center;
+background-repeat:repeat;
+background-size: cover;
+
+
+
+}
+
+    </style>
+    <div class="back">
+    <div class="container-xxl back text-light py-5 my-5">
+      <div class="container">
+        <div class="row g-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="card" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                  <div class="service-item rounded pt-3">
+                
+                      <div class="p-4">
+                          <i class="fa-solid fa-desktop fa-4x text-warning mb-4"></i>
+                          <h5>Basic SEO</h5>
+                          <p>I can setup your project to use basic SEO principles which will push your project to the first page on search engines and save you ads money</p>
+                      </div>
+                  
+                  </div>
+                  </div>
+              </div>
+
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                  <div class="service-item rounded pt-3">
+                      <div class="p-4">
+                          <i class="fa-4x fa-solid fa-code text-warning mb-4"></i>
+                          <h5>Development</h5>
+                          <p>I can code my own designs or even use the customer's design as base. My focus is to generate clean code that's well structured for reliability</p>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="col-lg-3 col-sm-6">
+                <div class="card" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                  <div class="service-item rounded pt-3">
+                      <div class="p-4">
+                          <i class="fa fa-4x fa-figma text-warning mb-4"></i>
+
+                          <h5>Design</h5>
+                          <p>Successful online projects start with good design. It establishes a solid foundation for future development 
+                          </p>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                  <div class="service-item rounded pt-3">
+                      <div class="p-4">
+                          <i class="fa fa-4x fa-database text-warning mb-4"></i>
+                          <h5>Database</h5>
+                          <p>We now deliver our signature, authentic Buhari food to you in the comfort of your place. Click above to order online.
+
+                          </p>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+
+
+
+          </div>
+        
+          <!-- row ends -->
+          <div class="row g-4 pt-5">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-4x fa-figma text-warning mb-4"></i>
+
+                        <h5>Design</h5>
+                        <p>Successful online projects start with good design. It establishes a solid foundation for future development 
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-4x fa-mobile-screen-button text-warning mb-4"></i>
+                        <h5>App development</h5>
+                        <p>Successful online projects start with good design. It establishes a solid foundation for future development 
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="card" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-4x fa-code-branch text-warning mb-4"></i>
+                        <h5>GIT</h5>
+                        <p>Successful online projects start with good design. It establishes a solid foundation for future development 
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+
+
+
+
+
+            </div>
+          </div>
+      </div>
+  </div>
+ 
+  
+  <!-- Service End -->  
+</div>
+<!-- about ends -->
+<!-- projects starts -->
+<div id="project">
+  
+<div class="container pt-5">
+  <div class="row pt-5">
+    <div class="col-lg-4 col-sm-4 pt-5">
+      <h1 class="pb-4">My Projects</h1>
+    </div>
+  </div>
+  <div class="row g-4">
+    <div class="col-lg-12 col-sm-12">
+      <h3 class="card-text mb-5">Spicy kitchen:It is the Online restarunt management System</h3>
+      <div class="card">
+        <img src="../images/spicykitchen.png" class="proj-link" alt="...">
+        <a href="https://spicy-kitchen-ten.vercel.app/" class="card__button">Open</a>
+      </div>
+     
+    </div>
+    <div class="col-lg-12 col-sm-12 pt-5">
+      <h3 class="card-text mb-5">Swiggy clone UI design</h3>
+
+      <div class="card text-bg-dark">
+        <img src="../images/swiggy.png" class="proj-link" alt="...">
+        <a href="https://swiggy-clone-eight-snowy.vercel.app/" class="card__button">Open</a>
+      </div>
+    </div>
+  
+    <div class="col-lg-12 col-sm-12 pt-5">
+      <h3 class="card-text mb-5">Spotstar:It is the Online music and movie platform</h3>
+
+      <div class="card text-bg-dark">
+        <img src="../images/spotstar.png" class="proj-link" alt="...">
+        <a href="https://spotstar.vercel.app/" class="card__button">Open</a>
+      </div>
+    </div>
+    <div class="col-lg-12 col-sm-12 pt-5">
+      <h3 class="card-text mb-5">Instagram login page Clone UI design</h3>
+
+      <div class="card text-bg-dark">
+        <img src="../images/insta2.png" class="proj-link" alt="...">
+        <a href="#" class="card__button">Open</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Projects ends -->
+
+
+<!-- contact starts -->
+<div id="contact">
+  <div class="container-fluid">
+   
+    
+    <h2 class="pb-5 mt-4 text-center">Let's work together</h2>
+   
+    <div class="row g-4 details pb-5 pt-3">
+      <div class="col-lg-3 col-sm-6">
+        <div class="card text-center" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+        <div class="card-body">
+          <i class="fa-solid fa-map-location-dot fa-4x" style="color: #FFD43B;"></i>
+          <h5 class="card-title pt-4">ADDRESS</h5>
+          <p class="card-text">12,South Street,Tirunelveli-Town</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+          </div>
+      </div>
+
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="card text-center" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+        <div class="card-body">
+          <i class="fa-solid fa-phone fa-4x" style="color: #FFD43B;"></i>
+          <h5 class="card-title pt-4">PHONE</h5>
+          <p class="card-text">9025893381</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+          </div>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6">
+        <div class="card text-center" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+        <div class="card-body">
+          <i class="fa-solid fa-envelope fa-4x" style="color: #FFD43B;"></i>
+          <h5 class="card-title pt-4">EMAIL ADDRESS</h5>
+          <p class="card-text">satheshsathish2206@gmail.com</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+          </div>
+      </div>
+
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="card text-center" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+        <div class="card-body">
+          <i class="fa-solid fa-envelope fa-4x" style="color: #FFD43B;"></i>
+          <h5 class="card-title pt-4">EMAIL ADDRESS</h5>
+          <p class="card-text">satheshsathish2206@gmail.com</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- row ends -->
+
+<!-- container ends -->
+</div>
+
+<div class="container">
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+    <img src="../images/contact-removebg-preview.png" class="img-fluid">
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+    <div class="mb-3">
+      <div class="row">
+        <h1>Get in touch</h1>
+        <div class="col">
+      <label  class="form-label">Your name</label>
+          <input type="text" class="form-control" placeholder="Your name">
+        </div>
+        <div class="col">
+      <label  class="form-label">Your email</label>
+          <input type="email" class="form-control" placeholder="Email">
+       </div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label  class="form-label">Subject</label>
+      <input type="text" class="form-control" placeholder="Subject">
+  </div>
+    <div class="mb-3">
+      <label  class="form-label">Message</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <div id="liveAlertPlaceholder"></div>
+      <button type="button" class="btn btn-info mt-2" id="liveAlertBtn">Send</button>
+   </div>  
+  
+  
+  </div>
+</div>
+</div>
+
+<style>
+.alert{
+  
+  margin-top:10px;
+}
+.card{
+          border: none;
+          
+         background-color: transparent;
+          color: rgb(18, 220, 7);
+          font-weight: 500;
+          font-size: 15px;
+        }
+        .fa-solid{
+          border: 1px solid black;
+          padding: 20px;
+          border-radius: 50%;
+          background-color: black;
+        }
+</style>
+<script>
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+const wrapper = document.createElement('div')
+wrapper.innerHTML = [
+  `<div class="alert alert-warning alert-dismissible fade show" role="alert">`,
+  `   <div>Your response sent`,
+  '     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+  '</div>'
+].join('')
+
+alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+alertTrigger.addEventListener('click', () => {
+  appendAlert('Your response is submitted', 'success')
+})
+}
+</script>
+
+</div>
+
+
+
 
 
 <script src="./main/script.js"></script>
@@ -104,6 +562,10 @@
   
        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> 
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
       
 </body>
 </html>
